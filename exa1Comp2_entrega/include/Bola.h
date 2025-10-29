@@ -1,20 +1,9 @@
-/**
- * @file Bola.h
- * @brief Definición de la clase Bola para simulación de partículas
- * @author Tu Nombre
- * @date Octubre 2025
- */
-
 #ifndef BOLA_H
 #define BOLA_H
 
 #include <cmath>
 #include <iostream>
 
-/**
- * @class Bola
- * @brief Representa una partícula esférica con posición, velocidad y propiedades físicas
- */
 class Bola {
  private:
   double x_;       ///< Posición en x
