@@ -1,0 +1,21 @@
+<map id="Caja::EvolucionarEuler" name="Caja::EvolucionarEuler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="631,104,799,129"/>
+<area shape="rect" id="Node000002" href="$classCaja.html#a03e04e7a9d987a0d3c27041566ad2267" title=" " alt="" coords="411,104,583,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="616,119,583,119,583,114,616,114"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a10d9a704f7cb821c7f443d276ea85fdd" title="Experimento 1: Gas diluido con pocas partículas." alt="" coords="143,5,327,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="464,99,417,70,362,44,323,33,324,28,364,40,420,66,467,94"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a81ac4e9ef121138a1f36ab6bafca994f" title="Experimento 2: Gas denso con muchas partículas." alt="" coords="146,55,325,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="415,104,362,94,303,83,304,77,363,89,416,99"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ae37065c5f05ca4aa523006c70a5e22db" title="Experimento 3: Comparación Euler vs Verlet." alt="" coords="108,104,363,129"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="397,119,363,119,363,114,397,114"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#abf824f2894c7f121ec9971b551eff7f4" title="Experimento 4: Análisis de presión (choques con paredes)" alt="" coords="155,153,316,179"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="416,135,304,156,303,151,415,129"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#a21d1dd1b244bb91ae5c43a9307aadb2a" title="Experimento 5: Distribución de velocidades (Maxwell&#45;Boltzmann)" alt="" coords="140,203,331,228"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="466,139,419,167,364,193,319,205,318,200,362,187,417,162,464,135"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Función principal." alt="" coords="5,104,60,129"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,35,109,44,89,58,71,74,45,105,41,102,68,70,86,54,107,40,129,30"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="145,85,109,94,61,109,59,104,107,89,144,80"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="94,119,60,119,60,114,94,114"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="149,153,107,143,59,129,61,123,109,138,150,148"/>
+<area shape="poly" id="edge11_Node000008_Node000004" title=" " alt="" coords="126,201,107,192,68,163,41,132,45,128,72,159,109,188,128,196"/>
+</map>

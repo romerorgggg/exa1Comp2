@@ -1,0 +1,18 @@
+<map id="Experimento5Velocidades" name="Experimento5Velocidades">
+<area shape="rect" id="Node000001" title="Experimento 5: Distribución de velocidades (Maxwell&#45;Boltzmann)" alt="" coords="5,56,196,81"/>
+<area shape="rect" id="Node000002" href="$classCaja.html#a14ffbc5c73c280d1d18a2ae2716fc908" title=" " alt="" coords="249,31,411,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,55,235,51,236,56,196,61"/>
+<area shape="rect" id="Node000003" href="$classCaja.html#a03e04e7a9d987a0d3c27041566ad2267" title=" " alt="" coords="244,80,416,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,76,231,80,230,85,196,81"/>
+<area shape="rect" id="Node000004" href="$classCaja.html#a931ea5c42b20243569de306a29b8886d" title=" " alt="" coords="481,5,620,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="379,77,415,65,463,40,483,32,485,37,465,44,417,70,381,82"/>
+<area shape="rect" id="Node000005" href="$classCaja.html#a5751ba8335dfd9913f36f11f9b0f8eb3" title=" " alt="" coords="467,55,635,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="416,80,453,76,453,81,417,85"/>
+<area shape="rect" id="Node000007" href="$classCaja.html#ab75ed69162b9e32ce6134c2454dff9e5" title=" " alt="" coords="464,104,637,129"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="417,99,451,103,450,108,416,105"/>
+<area shape="rect" id="Node000008" href="$classCaja.html#a6cefff4fdce32e6722944f7efca2056f" title=" " alt="" coords="473,153,628,179"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="366,103,465,138,492,147,490,152,463,143,364,108"/>
+<area shape="rect" id="Node000006" href="$classCaja.html#a18be169a78bbf1c435ba4deb0d9c31b0" title=" " alt="" coords="685,80,868,105"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="635,74,672,78,671,84,635,79"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="637,105,671,101,672,106,638,110"/>
+</map>

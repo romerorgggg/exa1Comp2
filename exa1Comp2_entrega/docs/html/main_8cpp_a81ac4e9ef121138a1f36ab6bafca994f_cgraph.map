@@ -1,0 +1,19 @@
+<map id="Experimento2GasDenso" name="Experimento2GasDenso">
+<area shape="rect" id="Node000001" title="Experimento 2: Gas denso con muchas partículas." alt="" coords="5,56,184,81"/>
+<area shape="rect" id="Node000002" href="$classCaja.html#a931ea5c42b20243569de306a29b8886d" title=" " alt="" coords="469,5,608,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,53,232,41,349,28,455,20,456,25,349,33,232,46,157,59"/>
+<area shape="rect" id="Node000003" href="$classCaja.html#a14ffbc5c73c280d1d18a2ae2716fc908" title=" " alt="" coords="237,56,399,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,66,223,66,223,71,184,71"/>
+<area shape="rect" id="Node000004" href="$classCaja.html#a03e04e7a9d987a0d3c27041566ad2267" title=" " alt="" coords="232,105,404,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="153,79,247,100,246,105,152,84"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="375,103,403,90,417,79,426,66,435,54,451,41,466,33,468,38,453,46,439,57,430,70,421,82,405,95,378,108"/>
+<area shape="rect" id="Node000005" href="$classCaja.html#a5751ba8335dfd9913f36f11f9b0f8eb3" title=" " alt="" coords="455,56,623,81"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="375,103,467,82,468,87,376,108"/>
+<area shape="rect" id="Node000007" href="$classCaja.html#ab75ed69162b9e32ce6134c2454dff9e5" title=" " alt="" coords="452,105,625,131"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="404,115,439,115,439,121,404,121"/>
+<area shape="rect" id="Node000008" href="$classCaja.html#a6cefff4fdce32e6722944f7efca2056f" title=" " alt="" coords="461,155,616,180"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="376,128,468,149,467,154,375,133"/>
+<area shape="rect" id="Node000006" href="$classCaja.html#a18be169a78bbf1c435ba4deb0d9c31b0" title=" " alt="" coords="673,81,856,107"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="623,75,660,80,659,85,623,81"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="625,106,659,102,660,108,626,111"/>
+</map>

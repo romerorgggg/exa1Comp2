@@ -1,0 +1,24 @@
+<map id="Caja::EnergiaTotal" name="Caja::EnergiaTotal">
+<area shape="rect" id="Node000001" title=" " alt="" coords="631,81,769,107"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a10d9a704f7cb821c7f443d276ea85fdd" title="Experimento 1: Gas diluido con pocas partículas." alt="" coords="143,5,327,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="642,80,582,66,449,44,327,29,328,24,450,39,583,61,643,75"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a81ac4e9ef121138a1f36ab6bafca994f" title="Experimento 2: Gas denso con muchas partículas." alt="" coords="146,55,325,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="617,92,325,75,325,70,617,87"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae37065c5f05ca4aa523006c70a5e22db" title="Experimento 3: Comparación Euler vs Verlet." alt="" coords="108,203,363,228"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="662,115,584,147,449,182,326,205,325,200,448,177,582,142,660,110"/>
+<area shape="rect" id="Node000006" href="$classCaja.html#a03e04e7a9d987a0d3c27041566ad2267" title=" " alt="" coords="411,107,583,132"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="617,107,583,111,583,106,616,102"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="Función principal." alt="" coords="5,104,60,129"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,35,109,44,89,58,71,74,45,105,41,102,68,70,86,54,107,40,129,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="150,85,109,95,61,110,59,105,107,90,149,80"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="121,200,107,194,86,180,68,163,41,131,45,128,71,159,89,176,109,189,124,196"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="465,101,418,71,362,44,324,33,325,28,364,40,421,67,468,96"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="418,107,299,83,300,77,419,101"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="466,142,419,169,364,194,323,205,322,200,362,189,417,164,464,137"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#abf824f2894c7f121ec9971b551eff7f4" title="Experimento 4: Análisis de presión (choques con paredes)" alt="" coords="155,153,316,179"/>
+<area shape="poly" id="edge11_Node000006_Node000007" title=" " alt="" coords="412,137,307,156,307,151,411,132"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#a21d1dd1b244bb91ae5c43a9307aadb2a" title="Experimento 5: Distribución de velocidades (Maxwell&#45;Boltzmann)" alt="" coords="140,104,331,129"/>
+<area shape="poly" id="edge13_Node000006_Node000008" title=" " alt="" coords="397,121,331,120,331,115,397,116"/>
+<area shape="poly" id="edge12_Node000007_Node000003" title=" " alt="" coords="144,153,107,145,59,129,61,124,109,139,145,148"/>
+<area shape="poly" id="edge14_Node000008_Node000003" title=" " alt="" coords="127,119,60,119,60,114,127,114"/>
+</map>

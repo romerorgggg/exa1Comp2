@@ -1,0 +1,41 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Función principal." alt="" coords="5,122,60,147"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#a10d9a704f7cb821c7f443d276ea85fdd" title="Experimento 1: Gas diluido con pocas partículas." alt="" coords="143,23,327,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="41,120,68,88,86,71,107,57,129,48,131,53,109,62,89,75,71,92,45,123"/>
+<area shape="rect" id="Node000010" href="$main_8cpp.html#a81ac4e9ef121138a1f36ab6bafca994f" title="Experimento 2: Gas denso con muchas partículas." alt="" coords="146,72,325,98"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="59,122,107,106,144,98,145,103,109,111,61,127"/>
+<area shape="rect" id="Node000011" href="$main_8cpp.html#ae37065c5f05ca4aa523006c70a5e22db" title="Experimento 3: Comparación Euler vs Verlet." alt="" coords="108,122,363,147"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="60,132,94,132,94,137,60,137"/>
+<area shape="rect" id="Node000012" href="$main_8cpp.html#abf824f2894c7f121ec9971b551eff7f4" title="Experimento 4: Análisis de presión (choques con paredes)" alt="" coords="155,220,316,246"/>
+<area shape="poly" id="edge19_Node000001_Node000012" title=" " alt="" coords="45,145,71,177,89,193,109,207,142,219,140,224,107,211,86,197,68,181,41,149"/>
+<area shape="rect" id="Node000014" href="$main_8cpp.html#a21d1dd1b244bb91ae5c43a9307aadb2a" title="Experimento 5: Distribución de velocidades (Maxwell&#45;Boltzmann)" alt="" coords="140,171,331,196"/>
+<area shape="poly" id="edge23_Node000001_Node000014" title=" " alt="" coords="61,141,109,156,150,165,149,171,107,161,59,146"/>
+<area shape="rect" id="Node000003" href="$classCaja.html#a931ea5c42b20243569de306a29b8886d" title=" " alt="" coords="681,47,820,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="304,20,370,11,448,5,533,4,616,12,665,24,709,39,708,44,664,29,616,17,532,9,448,10,370,16,305,26"/>
+<area shape="rect" id="Node000004" href="$classCaja.html#a14ffbc5c73c280d1d18a2ae2716fc908" title=" " alt="" coords="432,71,595,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="310,46,426,66,425,71,309,51"/>
+<area shape="rect" id="Node000005" href="$classCaja.html#a03e04e7a9d987a0d3c27041566ad2267" title=" " alt="" coords="427,172,599,198"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="329,44,364,57,380,68,390,80,413,106,484,162,481,166,409,109,386,83,376,72,361,62,327,49"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="569,170,615,151,639,131,662,108,712,77,715,81,666,112,642,135,617,155,571,175"/>
+<area shape="rect" id="Node000006" href="$classCaja.html#a5751ba8335dfd9913f36f11f9b0f8eb3" title=" " alt="" coords="667,123,835,148"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="575,170,675,148,676,154,576,175"/>
+<area shape="rect" id="Node000008" href="$classCaja.html#ab75ed69162b9e32ce6134c2454dff9e5" title=" " alt="" coords="664,172,837,198"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="599,182,650,182,650,188,599,188"/>
+<area shape="rect" id="Node000009" href="$classCaja.html#a6cefff4fdce32e6722944f7efca2056f" title=" " alt="" coords="673,222,828,247"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="576,195,676,216,675,221,575,200"/>
+<area shape="rect" id="Node000007" href="$classCaja.html#a18be169a78bbf1c435ba4deb0d9c31b0" title=" " alt="" coords="885,148,1068,174"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="835,142,872,146,871,152,835,148"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="837,173,871,169,872,175,838,178"/>
+<area shape="poly" id="edge12_Node000010_Node000003" title=" " alt="" coords="303,70,410,56,513,53,616,56,668,56,668,61,616,61,513,58,411,61,304,75"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="325,82,418,81,418,87,325,87"/>
+<area shape="poly" id="edge14_Node000010_Node000005" title=" " alt="" coords="322,95,364,106,427,134,481,163,479,168,425,138,362,111,321,100"/>
+<area shape="poly" id="edge16_Node000011_Node000003" title=" " alt="" coords="363,131,486,124,551,116,615,105,664,91,708,75,709,80,665,97,617,110,552,121,486,129,363,137"/>
+<area shape="poly" id="edge17_Node000011_Node000004" title=" " alt="" coords="305,119,429,96,430,101,306,124"/>
+<area shape="poly" id="edge18_Node000011_Node000005" title=" " alt="" coords="306,144,430,167,429,172,305,150"/>
+<area shape="poly" id="edge21_Node000012_Node000004" title=" " alt="" coords="316,223,361,207,377,196,386,185,409,158,480,102,483,106,413,161,390,188,380,200,364,211,317,228"/>
+<area shape="poly" id="edge22_Node000012_Node000005" title=" " alt="" coords="309,218,425,197,426,203,310,223"/>
+<area shape="rect" id="Node000013" href="$classCaja.html#a581c3200fc41d9fc4186d712eec58a5d" title=" " alt="" coords="411,222,616,247"/>
+<area shape="poly" id="edge20_Node000012_Node000013" title=" " alt="" coords="316,231,397,231,397,236,316,236"/>
+<area shape="poly" id="edge24_Node000014_Node000004" title=" " alt="" coords="316,168,362,156,425,129,478,101,481,105,427,134,364,161,317,173"/>
+<area shape="poly" id="edge25_Node000014_Node000005" title=" " alt="" coords="331,181,414,182,414,187,331,187"/>
+</map>

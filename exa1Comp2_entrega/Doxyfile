@@ -1,0 +1,53 @@
+# Doxyfile - Configuración para documentación del proyecto
+# Física Computacional 2 - 2025
+
+# Información del proyecto
+PROJECT_NAME           = "Simulación N Partículas"
+PROJECT_NUMBER         = "v1.0"
+PROJECT_BRIEF          = "Simulación de dinámica molecular en caja 2D"
+
+# Directorios
+OUTPUT_DIRECTORY       = docs
+INPUT                  = include src README.md
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+
+# Opciones de generación
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT            = html
+
+# Configuración de extracción
+JAVADOC_AUTOBRIEF      = YES
+OPTIMIZE_OUTPUT_FOR_C  = NO
+BUILTIN_STL_SUPPORT    = YES
+
+# Inclusión de archivos
+FILE_PATTERNS          = *.cpp *.h *.hpp *.md
+EXCLUDE_PATTERNS       = */obj/* */bin/* */results/* */analysis/*
+
+# Gráficos y diagramas
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+COLLABORATION_GRAPH    = YES
+UML_LOOK               = YES
+
+# Estilos y formato
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+
+# Configuraciones adicionales
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+# Referencias cruzadas
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
