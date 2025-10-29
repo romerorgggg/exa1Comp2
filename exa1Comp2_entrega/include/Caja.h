@@ -1,10 +1,3 @@
-/**
- * @file Caja.h
- * @brief Definición de la clase Caja para gestionar el sistema de partículas
- * @author Tu Nombre
- * @date Octubre 2025
- */
-
 #ifndef CAJA_H
 #define CAJA_H
 
