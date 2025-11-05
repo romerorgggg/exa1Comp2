@@ -1,9 +1,9 @@
 # 🪐 Péndulos Acoplados con Interacción No Lineal Cuadrática
 
-**Autor:** [Tu nombre]  
+**Autor:** Garzon, Romero  
 **Curso:** Física Computacional II — Universidad Distrital  
 **Profesor:** John Hernán Díaz  
-**Fecha:** Octubre 2025  
+
 
 ---
 
