@@ -1,0 +1,48 @@
+\doxysection{include/\+Pendulo.h File Reference}
+\hypertarget{Pendulo_8h}{}\label{Pendulo_8h}\index{include/Pendulo.h@{include/Pendulo.h}}
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Pendulo.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structParams}{Params}}
+\begin{DoxyCompactList}\small\item\em Almacena los parámetros físicos y de simulación del sistema. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPendulo}{Pendulo}}
+\begin{DoxyCompactList}\small\item\em Representa un péndulo individual en el sistema acoplado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{Pendulo_8h_a652cc9899f5e67c84b4e2e672da97510}{calculate\+\_\+accel}} (double theta\+\_\+this, double omega\+\_\+this, double theta\+\_\+other, double t, const \mbox{\hyperlink{structParams}{Params}} \&p)
+\begin{DoxyCompactList}\small\item\em Calcula la aceleración angular de un péndulo en un instante dado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{Pendulo_8h_a652cc9899f5e67c84b4e2e672da97510}\label{Pendulo_8h_a652cc9899f5e67c84b4e2e672da97510} 
+\index{Pendulo.h@{Pendulo.h}!calculate\_accel@{calculate\_accel}}
+\index{calculate\_accel@{calculate\_accel}!Pendulo.h@{Pendulo.h}}
+\doxysubsubsection{\texorpdfstring{calculate\_accel()}{calculate\_accel()}}
+{\footnotesize\ttfamily double calculate\+\_\+accel (\begin{DoxyParamCaption}\item[{double}]{theta\+\_\+this,  }\item[{double}]{omega\+\_\+this,  }\item[{double}]{theta\+\_\+other,  }\item[{double}]{t,  }\item[{const \mbox{\hyperlink{structParams}{Params}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Calcula la aceleración angular de un péndulo en un instante dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta\+\_\+this} & Ángulo del péndulo para el cual se calcula la aceleración. \\
+\hline
+{\em omega\+\_\+this} & Velocidad angular del mismo péndulo. \\
+\hline
+{\em theta\+\_\+other} & Ángulo del otro péndulo (para el acoplamiento). \\
+\hline
+{\em t} & Tiempo actual (para el forzamiento). \\
+\hline
+{\em p} & Estructura con los parámetros físicos del sistema. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La aceleración angular (theta\+\_\+ddot). 
+\end{DoxyReturn}

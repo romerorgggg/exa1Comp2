@@ -1,0 +1,85 @@
+\chapter{README}
+\hypertarget{md_README}{}\label{md_README}\index{README@{README}}
+\# Péndulos Acoplados Amortiguados y Forzados
+
+\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+Curso\+:\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Física Computacional II
+
+\DoxyHorRuler{0}
+
+
+\#\# Descripción del Proyecto
+
+Este proyecto implementa la simulación numérica de \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}dos péndulos acoplados con amortiguamiento, forzamiento externo y una interacción no lineal cuadrática\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}. El sistema se resuelve usando \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+Runge-\/\+Kutta de 4º orden (RK4)\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} o \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+Euler-\/\+Cromer\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, permitiendo al usuario configurar todos los parámetros de forma interactiva.
+
+El software, desarrollado en C++17, permite explorar fenómenos como la \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}transferencia de energía\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}sincronización\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}resonancia\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} y \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}caos\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}.
+
+\#\# Modelo Físico
+
+El sistema está gobernado por las ecuaciones\+:
+
+\textbackslash{}\mbox{[}
+
+\textbackslash{}begin\{cases\}
+
+\textbackslash{}ddot\{\textbackslash{}theta\}\+\_\+1 + \textbackslash{}gamma \textbackslash{}dot\{\textbackslash{}theta\}\+\_\+1 + \textbackslash{}dfrac\{g\}\{l\}\textbackslash{}sin(\textbackslash{}theta\+\_\+1) + \textbackslash{}kappa(\textbackslash{}theta\+\_\+1 -\/ \textbackslash{}theta\+\_\+2)\texorpdfstring{$^\wedge$}{\string^}2 = F\+\_\+0 \textbackslash{}cos(\textbackslash{}omega t), \textbackslash{}\textbackslash{}
+
+\textbackslash{}ddot\{\textbackslash{}theta\}\+\_\+2 + \textbackslash{}gamma \textbackslash{}dot\{\textbackslash{}theta\}\+\_\+2 + \textbackslash{}dfrac\{g\}\{l\}\textbackslash{}sin(\textbackslash{}theta\+\_\+2) + \textbackslash{}kappa(\textbackslash{}theta\+\_\+2 -\/ \textbackslash{}theta\+\_\+1)\texorpdfstring{$^\wedge$}{\string^}2 = F\+\_\+0 \textbackslash{}cos(\textbackslash{}omega t).
+
+\textbackslash{}end\{cases\}
+
+\textbackslash{}\mbox{]}
+
+\#\# Estructura del Proyecto
+
+pendulos\+\_\+proyecto/ +-- include/ \texorpdfstring{$\vert$}{|} +-- \doxylink{Pendulo_8h}{Pendulo.\+h} +-- src/ \texorpdfstring{$\vert$}{|} +-- \doxylink{Pendulo_8cpp}{Pendulo.\+cpp} \texorpdfstring{$\vert$}{|} +-- \doxylink{main_8cpp}{main.\+cpp} +-- scripts/ \texorpdfstring{$\vert$}{|} +-- plot.\+py +-- results/ +-- documents/ \texorpdfstring{$\vert$}{|} +-- analysis.\+tex \texorpdfstring{$\vert$}{|} +-- flowchart.\+png +-- Makefile +-- Doxyfile +-- \doxylink{README_8md}{README.\+md}\#\# Compilación y Uso
+
+\#\#\# 1. Compilar el proyecto
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#2.\ Ejecutar\ la\ simulación}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#El\ programa\ te\ guiará\ para\ introducir\ los\ parámetros.}
+\DoxyCodeLine{}
+\DoxyCodeLine{make\ run}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#Los\ datos\ se\ guardan\ en\ results/simulation\(\backslash\)\_data.csv.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#3.\ Generar\ gráficos}
+\DoxyCodeLine{}
+\DoxyCodeLine{make\ plot}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#Crea\ theta\(\backslash\)\_vs\(\backslash\)\_t.png,\ phase\(\backslash\)\_space.png\ y\ energy.png\ en\ results/.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#4.\ Generar\ documentación}
+\DoxyCodeLine{}
+\DoxyCodeLine{make\ doc}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#Abre\ docs/html/index.html.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#5.\ Generar\ reporte\ PDF}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#Edita\ documents/analysis.tex\ y\ compila:}
+\DoxyCodeLine{}
+\DoxyCodeLine{make\ report}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{-\/-\/-\/}
+\DoxyCodeLine{}
+\DoxyCodeLine{\(\backslash\)\#\#\#\#\ \(\backslash\)*\(\backslash\)*ARCHIVO:\ \`{}include/Pendulo.h`\(\backslash\)*\(\backslash\)*}
+
+\end{DoxyCode}
+ cpp
+
+\#ifndef PENDULO\+\_\+H
+
+\#define PENDULO\+\_\+H
+
+\#include $<$cmath$>$
+
+/\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}
+
+~\texorpdfstring{$\ast$}{*} 

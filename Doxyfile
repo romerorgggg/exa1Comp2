@@ -1,0 +1,22 @@
+# Doxyfile para el proyecto de péndulos forzados
+
+PROJECT_NAME           = "Péndulos Acoplados Amortiguados y Forzados"
+PROJECT_BRIEF          = "Simulación de péndulos con acoplamiento cuadrático, amortiguamiento y forzamiento"
+OUTPUT_DIRECTORY       = docs
+INPUT                  = ./src ./include ./README.md
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+
+# --- CONFIGURACIÓN DE LATEX ---
+# Queremos que genere los archivos .tex, así que esto debe ser YES
+GENERATE_LATEX         = YES
+
+# Dejamos esto en YES. Aunque usaremos lualatex, la estructura que genera es la correcta.
+USE_PDFLATEX           = YES
+
+# Esto asegura que los hipervínculos se generen correctamente
+PDF_HYPERLINKS         = YES
+
+# ELIMINA O COMENTA las líneas que habíamos añadido antes:
+# LATEX_EXTRA_PACKAGES, LATEX_EXTRA_FILES

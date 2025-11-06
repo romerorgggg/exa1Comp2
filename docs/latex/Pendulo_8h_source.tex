@@ -1,0 +1,46 @@
+\doxysection{Pendulo.\+h}
+\hypertarget{Pendulo_8h_source}{}\label{Pendulo_8h_source}\index{include/Pendulo.h@{include/Pendulo.h}}
+\mbox{\hyperlink{Pendulo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PENDULO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PENDULO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structParams}{Params}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{comment}{//\ Parámetros\ básicos}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_ac9fef54bf2909185eb121828ae18dc5a}{g}}\ =\ 9.81;\ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_af3b0e38e0d154641dda9da4748299d99}{l}}\ =\ 9.81;\ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_a88d76e8597d1759ae139401bd6297d17}{m}}\ =\ 1.0;\ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_a63e7e525881571b5807100c61de08b4b}{kappa}}\ =\ 0.5;\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Parámetros\ del\ modelo\ extendido}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_a978c763893030b3acc13857475cc71fa}{gamma}}\ =\ 0.1;\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_a7594e87bf9e7ddca7d55579e51157566}{F0}}\ =\ 0.0;\ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structParams_a8e1bfb0f85092ca1b0077f34f79451ab}{omega}}\ =\ 1.0;\ }
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPendulo}{Pendulo}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ ESTAS\ LÍNEAS\ FALTABAN\ -\/-\/-\/}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_a9befa8a20a9d5fd657c42dc6a03101b3}{theta\_}};\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_a92be3021eea30437bfc353d1f8048dd6}{omega\_}};\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classPendulo}{Pendulo}}(\textcolor{keywordtype}{double}\ theta0,\ \textcolor{keywordtype}{double}\ omega0);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{comment}{//\ Getters\ y\ Setters}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_a372e12f2a5d8bc6e9b8350c3e1eaa289}{get\_theta}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPendulo_a9befa8a20a9d5fd657c42dc6a03101b3}{theta\_}};\ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_af8f7aee2b02d19f0ab2c8f3325741b69}{get\_omega}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPendulo_a92be3021eea30437bfc353d1f8048dd6}{omega\_}};\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPendulo_a6b4e792c836958083a1ac340c17dccb9}{set\_theta}}(\textcolor{keywordtype}{double}\ new\_theta)\ \{\ \mbox{\hyperlink{classPendulo_a9befa8a20a9d5fd657c42dc6a03101b3}{theta\_}}\ =\ new\_theta;\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPendulo_a565d1793b4c784b21607019c5688a468}{set\_omega}}(\textcolor{keywordtype}{double}\ new\_omega)\ \{\ \mbox{\hyperlink{classPendulo_a92be3021eea30437bfc353d1f8048dd6}{omega\_}}\ =\ new\_omega;\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ ESTA\ DECLARACIÓN\ FALTABA\ -\/-\/-\/}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_adba01afa0872471cd961ee5e42612f06}{individual\_energy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structParams}{Params}}\&\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{Pendulo_8h_a652cc9899f5e67c84b4e2e672da97510}{calculate\_accel}}(\textcolor{keywordtype}{double}\ theta\_this,\ \textcolor{keywordtype}{double}\ omega\_this,\ \textcolor{keywordtype}{double}\ theta\_other,\ \textcolor{keywordtype}{double}\ t,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structParams}{Params}}\&\ p);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PENDULO\_H}}
+
+\end{DoxyCode}

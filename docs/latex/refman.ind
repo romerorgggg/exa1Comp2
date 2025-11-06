@@ -1,0 +1,101 @@
+\begin{theindex}
+
+  \item {calculate\_accel}
+    \subitem {Pendulo.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {F0}
+    \subitem {Params}, \hyperpage{8}
+
+  \indexspace
+
+  \item {g}
+    \subitem {Params}, \hyperpage{8}
+  \item {gamma}
+    \subitem {Params}, \hyperpage{8}
+  \item {get\_coupling\_energy}
+    \subitem {main.cpp}, \hyperpage{14}
+  \item {get\_omega}
+    \subitem {Pendulo}, \hyperpage{10}
+  \item {get\_theta}
+    \subitem {Pendulo}, \hyperpage{10}
+  \item {get\_user\_input}
+    \subitem {main.cpp}, \hyperpage{15}
+
+  \indexspace
+
+  \item {include/Pendulo.h}, \hyperpage{13, 14}
+  \item {individual\_energy}
+    \subitem {Pendulo}, \hyperpage{11}
+
+  \indexspace
+
+  \item {kappa}
+    \subitem {Params}, \hyperpage{8}
+
+  \indexspace
+
+  \item {l}
+    \subitem {Params}, \hyperpage{8}
+
+  \indexspace
+
+  \item {m}
+    \subitem {Params}, \hyperpage{8}
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{15}
+  \item {main.cpp}
+    \subitem {get\_coupling\_energy}, \hyperpage{14}
+    \subitem {get\_user\_input}, \hyperpage{15}
+    \subitem {main}, \hyperpage{15}
+
+  \indexspace
+
+  \item {omega}
+    \subitem {Params}, \hyperpage{8}
+  \item {omega\_}
+    \subitem {Pendulo}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Params}, \hyperpage{7}
+    \subitem {F0}, \hyperpage{8}
+    \subitem {g}, \hyperpage{8}
+    \subitem {gamma}, \hyperpage{8}
+    \subitem {kappa}, \hyperpage{8}
+    \subitem {l}, \hyperpage{8}
+    \subitem {m}, \hyperpage{8}
+    \subitem {omega}, \hyperpage{8}
+  \item {Pendulo}, \hyperpage{8}
+    \subitem {get\_omega}, \hyperpage{10}
+    \subitem {get\_theta}, \hyperpage{10}
+    \subitem {individual\_energy}, \hyperpage{11}
+    \subitem {omega\_}, \hyperpage{11}
+    \subitem {Pendulo}, \hyperpage{10}
+    \subitem {set\_omega}, \hyperpage{11}
+    \subitem {set\_theta}, \hyperpage{11}
+    \subitem {theta\_}, \hyperpage{11}
+  \item {Pendulo.h}
+    \subitem {calculate\_accel}, \hyperpage{13}
+
+  \indexspace
+
+  \item {README}, \hyperpage{1}
+  \item {README.md}, \hyperpage{14}
+
+  \indexspace
+
+  \item {set\_omega}
+    \subitem {Pendulo}, \hyperpage{11}
+  \item {set\_theta}
+    \subitem {Pendulo}, \hyperpage{11}
+  \item {src/main.cpp}, \hyperpage{14}
+  \item {src/Pendulo.cpp}, \hyperpage{15}
+
+  \indexspace
+
+  \item {theta\_}
+    \subitem {Pendulo}, \hyperpage{11}
+
+\end{theindex}
