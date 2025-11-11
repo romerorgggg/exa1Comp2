@@ -1,0 +1,40 @@
+\doxysection{Pendulo.\+h}
+\hypertarget{Pendulo_8h_source}{}\label{Pendulo_8h_source}\index{include/Pendulo.h@{include/Pendulo.h}}
+\mbox{\hyperlink{Pendulo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PENDULO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PENDULO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPendulo}{Pendulo}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_ad3804d526b65a164c7408e23a9c99e84}{theta}};\ \ \ \textcolor{comment}{//\ ángulo\ (rad)}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_a89276b9c1c5469d26f63f05b891f623d}{omega}};\ \ \ \textcolor{comment}{//\ velocidad\ angular\ (rad/s)}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structPendulo_1_1Params}{Params}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_a2862a883c6d8687b6f5f41798c04328f}{g}}\ =\ 9.81;\ \ \ \ \ \ \ \textcolor{comment}{//\ gravedad\ (m/s\string^2)}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_afad446166da5f6754c9bb7f09888eba6}{l}}\ =\ 1.0;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ longitud\ (m)}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_a23304cfc56b5853d9cb8e7aa0fe1a1ad}{kappa}}\ =\ 0.1;\ \ \ \ \textcolor{comment}{//\ constante\ de\ acoplamiento\ (no\ lineal)}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_a8d3f9d39ec55fd812a932f2438ada61a}{mass}}\ =\ 1.0;\ \ \ \ \ \textcolor{comment}{//\ masa\ (kg)}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_ae03183be1ae0971a790991e839c12490}{gamma}}\ =\ 0.0;\ \ \ \ \textcolor{comment}{//\ amortiguamiento}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_a9e9a31879709736bedf6eb1d0e836d72}{F0}}\ =\ 0.0;\ \ \ \ \ \ \ \textcolor{comment}{//\ amplitud\ de\ forzamiento}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structPendulo_1_1Params_a84e203e2128814154fe674193032e3df}{omega\_f}}\ =\ 1.0;\ \ \textcolor{comment}{//\ frecuencia\ de\ forzamiento}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structPendulo_1_1Params_a846002488e7179d7144df267b28c026c}{linear}}\ =\ \textcolor{keyword}{false};\ \ \ \textcolor{comment}{//\ si\ true\ usa\ acoplamiento\ lineal\ y\ sin(theta)≈theta}}
+\DoxyCodeLine{00029\ \ \ \ \ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classPendulo}{Pendulo}}(\textcolor{keywordtype}{double}\ theta0\ =\ 0.0,\ \textcolor{keywordtype}{double}\ omega0\ =\ 0.0);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPendulo_a4db53d239fea98ef910680af2b77c742}{setState}}(\textcolor{keywordtype}{double}\ theta0,\ \textcolor{keywordtype}{double}\ omega0);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ aceleración\ angular:\ dω/dt\ (incluye\ forzamiento\ y\ amortiguamiento)}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_a84d7bec3f3345c13a9d144592a96c4bf}{accel}}(\textcolor{keywordtype}{double}\ theta\_other,\ \textcolor{keywordtype}{double}\ omega\_self,\ \textcolor{keywordtype}{double}\ t,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structPendulo_1_1Params}{Params}}\&\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Energías}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_aed8cf1066909ca2fe493971b0287b48d}{kineticEnergy}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPendulo_1_1Params}{Params}}\&\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPendulo_a90138cd5c8d7e3fd75c17ae518fe0f4f}{potentialEnergyGravity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structPendulo_1_1Params}{Params}}\&\ p)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PENDULO\_H}}
+
+\end{DoxyCode}

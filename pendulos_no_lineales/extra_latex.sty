@@ -1,0 +1,70 @@
+\ProvidesPackage{extra_latex}
+% ===========================================================
+%  Paquete personalizado para Doxygen + LaTeX
+%  Autor: Camilo R. Rodríguez
+%  Proyecto: Péndulos acoplados no lineales
+%  Fecha: 2025
+%  -----------------------------------------------------------
+%  Este archivo soluciona errores de compilación de LaTeX
+%  por caracteres Unicode (símbolos griegos y especiales)
+%  que aparecen en los comentarios extraídos por Doxygen.
+% ===========================================================
+
+% ---- Símbolos de aproximación y operadores matemáticos ----
+\DeclareUnicodeCharacter{2248}{\ensuremath{\approx}}   % ≈  Aproximación
+\DeclareUnicodeCharacter{00B1}{\ensuremath{\pm}}       % ±  Más/menos
+\DeclareUnicodeCharacter{00D7}{\ensuremath{\times}}    % ×  Producto
+
+% ---- Letras griegas más comunes ----
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}    % α
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}     % β
+\DeclareUnicodeCharacter{03B3}{\ensuremath{\gamma}}    % γ
+\DeclareUnicodeCharacter{03B4}{\ensuremath{\delta}}    % δ
+\DeclareUnicodeCharacter{03B5}{\ensuremath{\epsilon}}  % ε
+\DeclareUnicodeCharacter{03B7}{\ensuremath{\eta}}      % η
+\DeclareUnicodeCharacter{03B8}{\ensuremath{\theta}}    % θ
+\DeclareUnicodeCharacter{03BA}{\ensuremath{\kappa}}    % κ
+\DeclareUnicodeCharacter{03BC}{\ensuremath{\mu}}       % μ
+\DeclareUnicodeCharacter{03BD}{\ensuremath{\nu}}       % ν
+\DeclareUnicodeCharacter{03BE}{\ensuremath{\xi}}       % ξ
+\DeclareUnicodeCharacter{03C0}{\ensuremath{\pi}}       % π
+\DeclareUnicodeCharacter{03C1}{\ensuremath{\rho}}      % ρ
+\DeclareUnicodeCharacter{03C3}{\ensuremath{\sigma}}    % σ
+\DeclareUnicodeCharacter{03C4}{\ensuremath{\tau}}      % τ
+\DeclareUnicodeCharacter{03C5}{\ensuremath{\upsilon}}  % υ
+\DeclareUnicodeCharacter{03C6}{\ensuremath{\phi}}      % φ
+\DeclareUnicodeCharacter{03C7}{\ensuremath{\chi}}      % χ
+\DeclareUnicodeCharacter{03C8}{\ensuremath{\psi}}      % ψ
+\DeclareUnicodeCharacter{03C9}{\ensuremath{\omega}}    % ω
+
+% ---- Mayúsculas griegas (por si acaso) ----
+\DeclareUnicodeCharacter{0393}{\ensuremath{\Gamma}}    % Γ
+\DeclareUnicodeCharacter{0394}{\ensuremath{\Delta}}    % Δ
+\DeclareUnicodeCharacter{0398}{\ensuremath{\Theta}}    % Θ
+\DeclareUnicodeCharacter{039B}{\ensuremath{\Lambda}}   % Λ
+\DeclareUnicodeCharacter{039E}{\ensuremath{\Xi}}       % Ξ
+\DeclareUnicodeCharacter{03A0}{\ensuremath{\Pi}}       % Π
+\DeclareUnicodeCharacter{03A3}{\ensuremath{\Sigma}}    % Σ
+\DeclareUnicodeCharacter{03A6}{\ensuremath{\Phi}}      % Φ
+\DeclareUnicodeCharacter{03A8}{\ensuremath{\Psi}}      % Ψ
+\DeclareUnicodeCharacter{03A9}{\ensuremath{\Omega}}    % Ω
+
+% ---- Símbolos de unidades y notación ----
+\DeclareUnicodeCharacter{00B0}{\ensuremath{^{\circ}}}  % °  Grados
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}         % −  Signo menos
+\DeclareUnicodeCharacter{2013}{--}                     % –  Guion largo
+\DeclareUnicodeCharacter{00B7}{\ensuremath{\cdot}}     % ·  Punto medio
+\DeclareUnicodeCharacter{22C5}{\ensuremath{\cdot}}     % ⋅  Multiplicación
+\DeclareUnicodeCharacter{2219}{\ensuremath{\cdot}}     % ∙  Punto centrado
+
+% ---- Símbolos misceláneos ----
+\DeclareUnicodeCharacter{2260}{\ensuremath{\neq}}      % ≠  Diferente
+\DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}      % ≤  Menor o igual
+\DeclareUnicodeCharacter{2265}{\ensuremath{\geq}}      % ≥  Mayor o igual
+\DeclareUnicodeCharacter{222B}{\ensuremath{\int}}      % ∫  Integral
+\DeclareUnicodeCharacter{2202}{\ensuremath{\partial}}  % ∂  Derivada parcial
+\DeclareUnicodeCharacter{2211}{\ensuremath{\sum}}      % ∑  Sumatoria
+
+% ===========================================================
+%  Fin del archivo extra_latex.sty
+% ===========================================================

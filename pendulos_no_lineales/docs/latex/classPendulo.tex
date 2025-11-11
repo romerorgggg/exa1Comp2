@@ -1,0 +1,95 @@
+\doxysection{Pendulo Class Reference}
+\hypertarget{classPendulo}{}\label{classPendulo}\index{Pendulo@{Pendulo}}
+
+
+{\ttfamily \#include $<$Pendulo.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structPendulo_1_1Params}{Params}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPendulo_a355861ac4da1e031e86e1f2cfecb29bb}{Pendulo}} (double theta0=0.\+0, double omega0=0.\+0)
+\item 
+void \mbox{\hyperlink{classPendulo_a4db53d239fea98ef910680af2b77c742}{set\+State}} (double theta0, double omega0)
+\item 
+double \mbox{\hyperlink{classPendulo_a84d7bec3f3345c13a9d144592a96c4bf}{accel}} (double theta\+\_\+other, double omega\+\_\+self, double t, const \mbox{\hyperlink{structPendulo_1_1Params}{Params}} \&p) const
+\item 
+double \mbox{\hyperlink{classPendulo_aed8cf1066909ca2fe493971b0287b48d}{kinetic\+Energy}} (const \mbox{\hyperlink{structPendulo_1_1Params}{Params}} \&p) const
+\item 
+double \mbox{\hyperlink{classPendulo_a90138cd5c8d7e3fd75c17ae518fe0f4f}{potential\+Energy\+Gravity}} (const \mbox{\hyperlink{structPendulo_1_1Params}{Params}} \&p) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classPendulo_ad3804d526b65a164c7408e23a9c99e84}{theta}}
+\item 
+double \mbox{\hyperlink{classPendulo_a89276b9c1c5469d26f63f05b891f623d}{omega}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase \doxylink{classPendulo}{Pendulo}\+: estado y métodos para un péndulo del sistema acoplado forzado.
+
+Ecuación implementada (forma conveniente)\+: theta\+\_\+ddot = -\/gamma\texorpdfstring{$\ast$}{*}theta\+\_\+dot -\/ (g/l) \texorpdfstring{$\ast$}{*} sin(theta) -\/ kappa\texorpdfstring{$\ast$}{*}(theta -\/ theta\+\_\+other)\texorpdfstring{$^\wedge$}{\string^}2 + F0 \texorpdfstring{$\ast$}{*} cos(omega\+\_\+f \texorpdfstring{$\ast$}{*} t)
+
+Observación\+: la signatura accel recibe theta\+\_\+other, omega\+\_\+self, tiempo t y params. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPendulo_a355861ac4da1e031e86e1f2cfecb29bb}\label{classPendulo_a355861ac4da1e031e86e1f2cfecb29bb} 
+\index{Pendulo@{Pendulo}!Pendulo@{Pendulo}}
+\index{Pendulo@{Pendulo}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{Pendulo()}{Pendulo()}}
+{\footnotesize\ttfamily Pendulo\+::\+Pendulo (\begin{DoxyParamCaption}\item[{double}]{theta0 = {\ttfamily 0.0},  }\item[{double}]{omega0 = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPendulo_a84d7bec3f3345c13a9d144592a96c4bf}\label{classPendulo_a84d7bec3f3345c13a9d144592a96c4bf} 
+\index{Pendulo@{Pendulo}!accel@{accel}}
+\index{accel@{accel}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{accel()}{accel()}}
+{\footnotesize\ttfamily double Pendulo\+::accel (\begin{DoxyParamCaption}\item[{double}]{theta\+\_\+other,  }\item[{double}]{omega\+\_\+self,  }\item[{double}]{t,  }\item[{const \mbox{\hyperlink{structPendulo_1_1Params}{Params}} \&}]{p }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPendulo_aed8cf1066909ca2fe493971b0287b48d}\label{classPendulo_aed8cf1066909ca2fe493971b0287b48d} 
+\index{Pendulo@{Pendulo}!kineticEnergy@{kineticEnergy}}
+\index{kineticEnergy@{kineticEnergy}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{kineticEnergy()}{kineticEnergy()}}
+{\footnotesize\ttfamily double Pendulo\+::kinetic\+Energy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPendulo_1_1Params}{Params}} \&}]{p }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPendulo_a90138cd5c8d7e3fd75c17ae518fe0f4f}\label{classPendulo_a90138cd5c8d7e3fd75c17ae518fe0f4f} 
+\index{Pendulo@{Pendulo}!potentialEnergyGravity@{potentialEnergyGravity}}
+\index{potentialEnergyGravity@{potentialEnergyGravity}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{potentialEnergyGravity()}{potentialEnergyGravity()}}
+{\footnotesize\ttfamily double Pendulo\+::potential\+Energy\+Gravity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPendulo_1_1Params}{Params}} \&}]{p }\end{DoxyParamCaption}) const}
+
+\Hypertarget{classPendulo_a4db53d239fea98ef910680af2b77c742}\label{classPendulo_a4db53d239fea98ef910680af2b77c742} 
+\index{Pendulo@{Pendulo}!setState@{setState}}
+\index{setState@{setState}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Pendulo\+::set\+State (\begin{DoxyParamCaption}\item[{double}]{theta0,  }\item[{double}]{omega0 }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPendulo_a89276b9c1c5469d26f63f05b891f623d}\label{classPendulo_a89276b9c1c5469d26f63f05b891f623d} 
+\index{Pendulo@{Pendulo}!omega@{omega}}
+\index{omega@{omega}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{omega}{omega}}
+{\footnotesize\ttfamily double Pendulo\+::omega}
+
+\Hypertarget{classPendulo_ad3804d526b65a164c7408e23a9c99e84}\label{classPendulo_ad3804d526b65a164c7408e23a9c99e84} 
+\index{Pendulo@{Pendulo}!theta@{theta}}
+\index{theta@{theta}!Pendulo@{Pendulo}}
+\doxysubsubsection{\texorpdfstring{theta}{theta}}
+{\footnotesize\ttfamily double Pendulo\+::theta}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Pendulo_8h}{Pendulo.\+h}}\item 
+src/\mbox{\hyperlink{Pendulo_8cpp}{Pendulo.\+cpp}}\end{DoxyCompactItemize}

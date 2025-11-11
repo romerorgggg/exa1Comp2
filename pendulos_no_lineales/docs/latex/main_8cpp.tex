@@ -1,0 +1,123 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include "{}Pendulo.\+h"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structState}{State}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structState}{State}} \mbox{\hyperlink{main_8cpp_a4a92b1b8f4697983907ef644de00c809}{derivatives}} (const \mbox{\hyperlink{structState}{State}} \&s, double t)
+\item 
+\mbox{\hyperlink{structState}{State}} \mbox{\hyperlink{main_8cpp_a53872b61c0717c1db01c192272654660}{rk4\+\_\+step}} (const \mbox{\hyperlink{structState}{State}} \&s, double t, double dt)
+\item 
+\mbox{\hyperlink{structState}{State}} \mbox{\hyperlink{main_8cpp_a6dc8f15119535b8d8a92213ad3703e50}{euler\+\_\+cromer\+\_\+step}} (const \mbox{\hyperlink{structState}{State}} \&s, double t, double dt)
+\item 
+double \mbox{\hyperlink{main_8cpp_a8a85320f7a63de98d835b4c9f93343c8}{coupling\+Potential}} (double th1, double th2, const \mbox{\hyperlink{structPendulo_1_1Params}{Pendulo\+::\+Params}} \&p)
+\item 
+double \mbox{\hyperlink{main_8cpp_a58a968c999a22f253c9b7353eb96f48c}{total\+Energy}} (const \mbox{\hyperlink{classPendulo}{Pendulo}} \&p1, const \mbox{\hyperlink{classPendulo}{Pendulo}} \&p2, const \mbox{\hyperlink{structPendulo_1_1Params}{Pendulo\+::\+Params}} \&p)
+\item 
+void \mbox{\hyperlink{main_8cpp_a2a3d3b9f34c112c15f99875c1881fd3d}{write\+CSV}} (const string \&path, const std\+::vector$<$ double $>$ \&t, const std\+::vector$<$ \mbox{\hyperlink{structState}{State}} $>$ \&states, const std\+::vector$<$ double $>$ \&E1, const std\+::vector$<$ double $>$ \&E2, const std\+::vector$<$ double $>$ \&Et)
+\item 
+string \mbox{\hyperlink{main_8cpp_ac98d74e957040e02c9a8f1502aec4f22}{run\+\_\+simulation}} (const string \&outname, \mbox{\hyperlink{structState}{State}} s0, double t0, double tf, double dt, const string \&method)
+\item 
+string \mbox{\hyperlink{main_8cpp_a0ad32f801a7ee8b9c2a2a6c9932b9929}{run\+\_\+resonance\+\_\+sweep}} (const string \&outname, \mbox{\hyperlink{structState}{State}} s0, double t0, double tf, double dt, double omega\+\_\+min, double omega\+\_\+max, int nsteps)
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPendulo_1_1Params}{Pendulo\+::\+Params}} \mbox{\hyperlink{main_8cpp_a9ac6960ce1313f0af173b0124a15202e}{params}}
+\item 
+string \mbox{\hyperlink{main_8cpp_ad096cc00fa9408c0be5ab9ed6c953e58}{integrator}} = "{}RK4"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a8a85320f7a63de98d835b4c9f93343c8}\label{main_8cpp_a8a85320f7a63de98d835b4c9f93343c8} 
+\index{main.cpp@{main.cpp}!couplingPotential@{couplingPotential}}
+\index{couplingPotential@{couplingPotential}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{couplingPotential()}{couplingPotential()}}
+{\footnotesize\ttfamily double coupling\+Potential (\begin{DoxyParamCaption}\item[{double}]{th1,  }\item[{double}]{th2,  }\item[{const \mbox{\hyperlink{structPendulo_1_1Params}{Pendulo\+::\+Params}} \&}]{p }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a4a92b1b8f4697983907ef644de00c809}\label{main_8cpp_a4a92b1b8f4697983907ef644de00c809} 
+\index{main.cpp@{main.cpp}!derivatives@{derivatives}}
+\index{derivatives@{derivatives}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{derivatives()}{derivatives()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structState}{State}} derivatives (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structState}{State}} \&}]{s,  }\item[{double}]{t }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a6dc8f15119535b8d8a92213ad3703e50}\label{main_8cpp_a6dc8f15119535b8d8a92213ad3703e50} 
+\index{main.cpp@{main.cpp}!euler\_cromer\_step@{euler\_cromer\_step}}
+\index{euler\_cromer\_step@{euler\_cromer\_step}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{euler\_cromer\_step()}{euler\_cromer\_step()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structState}{State}} euler\+\_\+cromer\+\_\+step (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structState}{State}} \&}]{s,  }\item[{double}]{t,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a53872b61c0717c1db01c192272654660}\label{main_8cpp_a53872b61c0717c1db01c192272654660} 
+\index{main.cpp@{main.cpp}!rk4\_step@{rk4\_step}}
+\index{rk4\_step@{rk4\_step}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{rk4\_step()}{rk4\_step()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structState}{State}} rk4\+\_\+step (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structState}{State}} \&}]{s,  }\item[{double}]{t,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a0ad32f801a7ee8b9c2a2a6c9932b9929}\label{main_8cpp_a0ad32f801a7ee8b9c2a2a6c9932b9929} 
+\index{main.cpp@{main.cpp}!run\_resonance\_sweep@{run\_resonance\_sweep}}
+\index{run\_resonance\_sweep@{run\_resonance\_sweep}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{run\_resonance\_sweep()}{run\_resonance\_sweep()}}
+{\footnotesize\ttfamily string run\+\_\+resonance\+\_\+sweep (\begin{DoxyParamCaption}\item[{const string \&}]{outname,  }\item[{\mbox{\hyperlink{structState}{State}}}]{s0,  }\item[{double}]{t0,  }\item[{double}]{tf,  }\item[{double}]{dt,  }\item[{double}]{omega\+\_\+min,  }\item[{double}]{omega\+\_\+max,  }\item[{int}]{nsteps }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_ac98d74e957040e02c9a8f1502aec4f22}\label{main_8cpp_ac98d74e957040e02c9a8f1502aec4f22} 
+\index{main.cpp@{main.cpp}!run\_simulation@{run\_simulation}}
+\index{run\_simulation@{run\_simulation}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{run\_simulation()}{run\_simulation()}}
+{\footnotesize\ttfamily string run\+\_\+simulation (\begin{DoxyParamCaption}\item[{const string \&}]{outname,  }\item[{\mbox{\hyperlink{structState}{State}}}]{s0,  }\item[{double}]{t0,  }\item[{double}]{tf,  }\item[{double}]{dt,  }\item[{const string \&}]{method }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a58a968c999a22f253c9b7353eb96f48c}\label{main_8cpp_a58a968c999a22f253c9b7353eb96f48c} 
+\index{main.cpp@{main.cpp}!totalEnergy@{totalEnergy}}
+\index{totalEnergy@{totalEnergy}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{totalEnergy()}{totalEnergy()}}
+{\footnotesize\ttfamily double total\+Energy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classPendulo}{Pendulo}} \&}]{p1,  }\item[{const \mbox{\hyperlink{classPendulo}{Pendulo}} \&}]{p2,  }\item[{const \mbox{\hyperlink{structPendulo_1_1Params}{Pendulo\+::\+Params}} \&}]{p }\end{DoxyParamCaption})}
+
+\Hypertarget{main_8cpp_a2a3d3b9f34c112c15f99875c1881fd3d}\label{main_8cpp_a2a3d3b9f34c112c15f99875c1881fd3d} 
+\index{main.cpp@{main.cpp}!writeCSV@{writeCSV}}
+\index{writeCSV@{writeCSV}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{writeCSV()}{writeCSV()}}
+{\footnotesize\ttfamily void write\+CSV (\begin{DoxyParamCaption}\item[{const string \&}]{path,  }\item[{const std\+::vector$<$ double $>$ \&}]{t,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{structState}{State}} $>$ \&}]{states,  }\item[{const std\+::vector$<$ double $>$ \&}]{E1,  }\item[{const std\+::vector$<$ double $>$ \&}]{E2,  }\item[{const std\+::vector$<$ double $>$ \&}]{Et }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8cpp_ad096cc00fa9408c0be5ab9ed6c953e58}\label{main_8cpp_ad096cc00fa9408c0be5ab9ed6c953e58} 
+\index{main.cpp@{main.cpp}!integrator@{integrator}}
+\index{integrator@{integrator}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{integrator}{integrator}}
+{\footnotesize\ttfamily string integrator = "{}RK4"{}}
+
+\Hypertarget{main_8cpp_a9ac6960ce1313f0af173b0124a15202e}\label{main_8cpp_a9ac6960ce1313f0af173b0124a15202e} 
+\index{main.cpp@{main.cpp}!params@{params}}
+\index{params@{params}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPendulo_1_1Params}{Pendulo\+::\+Params}} params}
+
